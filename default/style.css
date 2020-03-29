@@ -88,9 +88,6 @@ header {
   cursor: pointer;
 }
 
-.btn-group {
-  padding: 0px;
-}
 
 /* button[disabled] {
   cursor: default;
