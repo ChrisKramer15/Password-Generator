@@ -8,10 +8,11 @@ var numInput = "0123456789";
 var specInput = "!@#$%^&*_-+";
 
 //an empty array that will take the variables, once confirmed
-var pwDisplay1 = [];
+
 
 //all confirmation statements that will determine characters used; activated with button click
 function genFunction (generateBtn) {
+var pwDisplay1 = [];
 var confirmUpper = confirm("Include uppercase characters?");
 var confirmLower = confirm("Include lowercase characters?");
 var confirmNumber = confirm("Include numbers?");
@@ -52,7 +53,6 @@ if (confirmNumber === true) {
 if (confirmSpecial === true) {
   pwDisplay1.push(specInput);
 }
-
 //for loop to randomly select number of characters requested
 for (var i=0; i<approvedAmount; i++) {
 password = pwDisplay1[Math.floor(Math.random() * pwDisplay1.length)];
